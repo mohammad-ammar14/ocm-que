@@ -20,4 +20,3 @@ spec:
   snapshotTemplate:
     name: db-deployment-localized
     createFluxSource: true
-    
