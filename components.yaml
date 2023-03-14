@@ -1,6 +1,6 @@
 components:
 - name: github.com/ammar/que
-  version: "v1.0.0"
+  version: "v1.0.1"
   provider:
     name: ammar
   resources:
@@ -19,14 +19,14 @@ components:
     - name: db-deployment
       type: PlainText
       input:
-        type: file
-        path: "manifests/db-deployment.yaml"
+        type: dir
+        path: "db-manifests"
         compress: true
     - name: app-deployment
       type: PlainText
       input:
-        type: file
-        path: "manifests/app-deployment.yaml"
+        type: dir
+        path: "app-manifests"
         compress: true        
     - name: db-config
       type: PlainText
